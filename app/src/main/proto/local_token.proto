@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "com.example.youtubeclone.core.datastore";
+option java_multiple_files = true;
+
+message LocalToken {
+  string accessToken = 1;
+  string accessTokenExpireDate = 2;
+  string refreshToken = 3;
+  string refreshTokenExpireDate = 4;
+}
